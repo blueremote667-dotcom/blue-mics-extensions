@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Click CSS Inspector",
+  "version": "1.0.0",
+  "description": "Click any element on a page to see its tag, classes, and key computed CSS styles.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "permissions": ["activeTab", "scripting"]
+}

@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Simple Dark Mode",
+  "version": "1.0.0",
+  "description": "Click the icon to toggle a dark filter on any website. Remembers your choice per site.",
+  "action": {
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    },
+    "default_title": "Toggle Dark Mode"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["storage", "scripting", "tabs"],
+  "host_permissions": ["<all_urls>"]
+}

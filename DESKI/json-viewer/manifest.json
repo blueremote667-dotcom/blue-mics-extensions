@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "JSON Pretty Viewer",
+  "version": "1.0.0",
+  "description": "Automatically pretty-prints raw JSON responses viewed in the browser, with a collapsible tree and syntax colors.",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_end",
+      "all_frames": false
+    }
+  ],
+  "action": {
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    },
+    "default_title": "JSON Pretty Viewer"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
